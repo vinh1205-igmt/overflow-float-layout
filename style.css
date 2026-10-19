@@ -1,0 +1,50 @@
+/* Reset CSS cơ bản */
+* {
+    box-sizing: border-box; /* Đảm bảo padding không làm phình kích thước khối */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* Khối bao quanh 2 cột float */
+.container {
+    width: 100%;
+    overflow: hidden; /* Xử lý tràn khối (clearfix) do thuộc tính float gây ra */
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+/* Cột bên trái */
+.left-column {
+    width: 50%;
+    float: left;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+/* Cột bên phải */
+.right-column {
+    width: 50%;
+    float: right;
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+/* Khối nội dung quá dài có thanh cuộn */
+.overflow-box {
+    width: 300px;
+    height: 100px;
+    background-color: lightcoral;
+    padding: 10px;
+    overflow: auto; /* Tự động hiển thị thanh cuộn khi nội dung tràn */
+    border-radius: 5px;
+    color: #333333;
+}
